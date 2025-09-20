@@ -228,7 +228,7 @@
         .then(response => response.text())
         .then(data => {
           console.log("Réponse du serveur:", data);
-          alert("Vos données ont été enregistrées avec succès !");
+          window.location.href = "success.html";
           //localStorage.removeItem("formData"); // Optionnel : nettoyer le stockage
         })
         .catch(error => {
