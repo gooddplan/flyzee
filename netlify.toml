@@ -6,6 +6,6 @@
 # Proxy vers ton backend PHP (hébergé sur wuaze.com)
 [[redirects]]
   from = "/api/*"
-  to = "https://flyzee.wuaze.com/:splat"
+  to = "https://flyzee.wuaze.com/sauvegarde.php"
   status = 200
   force = true
