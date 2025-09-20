@@ -1,0 +1,11 @@
+# netlify.toml
+
+[build]
+  publish = "."
+
+# Proxy vers ton backend PHP (hébergé sur wuaze.com)
+[[redirects]]
+  from = "/api/*"
+  to = "https://flyzee.wuaze.com/:splat"
+  status = 200
+  force = true
