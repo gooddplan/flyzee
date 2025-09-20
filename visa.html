@@ -60,7 +60,7 @@
         <div class="container mt-5">
             <h4 class="text-danger">Formulaire : Votre projet de voyage</h4>
             <h5 class="mt-3 fw-medium">Etape 1 sur 4 </h5>
-            <form class="mt-5" method="post" action="identity">
+            <form class="mt-5" method="post" >
                 <div class="row g-3"> 
 
                 <div class="col-md-6">
@@ -229,6 +229,7 @@
           const mergedData = { ...existingData, ...newFormData };
 
           localStorage.setItem("formData", JSON.stringify(mergedData));
+          window.location.href="identity.html"
         });
       });
     </script>
