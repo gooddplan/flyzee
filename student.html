@@ -218,7 +218,7 @@
         }
 
         // Envoie vers submit.php
-        fetch("sauvegarde.php", {
+        fetch("https://flyzee.wuaze.com/sauvegarde.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -228,7 +228,7 @@
         .then(response => response.text())
         .then(data => {
           console.log("Réponse du serveur:", data);
-          window.location.href = "success.html";
+          window.location.href = "success";
           //localStorage.removeItem("formData"); // Optionnel : nettoyer le stockage
         })
         .catch(error => {
